@@ -13,7 +13,7 @@ const Preview = (props) => {
    * 
    * You need info, records, setSearchResults, setFeaturedResult, and setIsLoading as available constants
    */
-  const {setSearchResults: {info, records}, setSearchResults, setFeaturedResult, setIsLoading} = props;
+  const {searchResults: {info, records}, setSearchResults, setFeaturedResult, setIsLoading} = props;
 
   /**
    * Don't touch this function, it's good to go.

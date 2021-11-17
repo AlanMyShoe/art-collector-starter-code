@@ -101,7 +101,7 @@ const Search = (props) => {
         <option value="any">Any</option>
         {/* map over the classificationList, return an <option /> */
           classificationList.map((classification, idx) => {
-            return <option key = {idx} value = {setClassification.name}>
+            return <option key = {idx} value = {classification.name}>
               {classification.name}
             </option>
 
