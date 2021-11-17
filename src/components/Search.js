@@ -39,10 +39,11 @@ const Search = (props) => {
    */
   useEffect( async () => {
     try{
-        let fetchAllCenturies = await fetchAllCenturies();
-        let fetchAllClassifications = await fetchAllClassifications();
-        setCenturyList(fetchAllCenturies)
-        setClassificationList(fetchAllClassifications)
+        let allCenturies = await fetchAllCenturies();
+        let allClassifications = await fetchAllClassifications();
+        
+        setCenturyList(allCenturies)
+        setClassificationList(allClassifications)
 
     }catch(err){
       console.error(err)
